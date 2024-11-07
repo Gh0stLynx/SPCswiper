@@ -1,0 +1,221 @@
+body {
+  background: #f8f8f8;
+  font-family: "TT Lakes Compressed Medium", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "TT Lakes Compressed Regular";
+  src: url("fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes Compressed Medium";
+  src: url("fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  margin-bottom: 35px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.header {
+  min-width: 320px;
+  height: 80px;
+  font-family: "TT Lakes Compressed Regular", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #7e7e82;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  border-top: 1px solid #d9fff5;
+}
+
+nav {
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+
+.container-large-screen {
+  display: none;
+}
+
+.container-small-screen {
+  display: block;
+}
+
+.logos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-height: 180px;
+  overflow: hidden;
+}
+
+.link-lenovo {
+  background: url("logos/cat1.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-samsung {
+  background: url("logos/cat1 copy.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-apple {
+  background: url("logos/cat1 copy 2.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-viewsonic {
+  background: url("logos/cat1 copy 3.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-bosch {
+  background: url("logos/cat1 copy 7.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-hp {
+  background: url("logos/cat1 copy 8.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-aser {
+  background: url("logos/cat1 copy 9.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.link-sony {
+  background: url("logos/cat1 copy 10.png");
+  background-repeat: no-repeat;
+  height: 72px;
+  width: 240px;
+}
+
+.swiper-container {
+  width: 250px;
+  height: 80px;
+}
+
+.swiper-slide {
+  width: 240px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-slide {
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin-left: 20px;
+}
+
+.lenovo {
+  background-image: url("logos/cat1.png");
+}
+.samsung {
+  background-image: url("logos/cat1 copy.png");
+}
+
+.apple {
+  background-image: url("logos/cat1 copy 2.png");
+}
+
+.viewsonic {
+  background-image: url("logos/cat1 copy 3.png");
+}
+
+.bosch {
+  background-image: url("logos/cat1 copy 7.png");
+}
+.hp {
+  background-image: url("logos/cat1 copy 8.png");
+}
+
+.aser {
+  background-image: url("logos/cat1 copy 9.png");
+}
+
+.sony {
+  background-image: url("logos/cat1 copy 10.png");
+}
+
+.swiper-pagination-bullet-active {
+  background: #b5b6bc !important;
+}
+
+/* 768 */
+
+@media (min-width: 768px) {
+  .container-large-screen {
+    display: block;
+  }
+
+  .container-small-screen {
+    display: none;
+  }
+
+  .switch-button {
+    display: block;
+    position: relative;
+    margin-left: 45px;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: #1b1c21;
+    font-size: 14px;
+    font-family: "TT Lakes Compressed Medium", sans-serif;
+  }
+
+  .switch-button::before,
+  .switch-button::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-left: 2px solid #41f6d7;
+    border-top: 2px solid #41f6d7;
+    transform: rotate(-135deg);
+  }
+
+  .switch-button::before {
+    top: 3px;
+    left: -20px;
+  }
+
+  .switch-button::after {
+    top: 10px;
+    left: -20px;
+  }
+}
