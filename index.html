@@ -4,121 +4,70 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ремонт техники</title>
-    
-    <link rel="stylesheet" href="style.css" />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
+  <body>
     <header class="header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ ВИДОВ</header>
 
-<div class="container-large-screen">
-    <aside>
-      <nav class="logos">
+    <div class="container-large-screen">
+      <aside>
+        <nav class="logos logos_cut logos_full">
+          <a href="#" class="logos__link link-lenovo" aria-label="Lenovo"></a>
+          <a href="#" class="logos__link link-samsung" aria-label="Samsung"></a>
+          <a href="#" class="logos__link link-apple" aria-label="Apple"></a>
+          <a
+            href="#"
+            class="logos__link link-viewsonic"
+            aria-label="ViewSonic"
+          ></a>
+          <a href="#" class="logos__link link-bosch" aria-label="Bosch"></a>
+          <a href="#" class="logos__link link-hp" aria-label="Hp"></a>
+          <a href="#" class="logos__link link-aser" aria-label="Aser"></a>
+          <a href="#" class="logos__link link-sony" aria-label="Sony"></a>
+          <a href="#" class="logos__link link-lenovo" aria-label="Lenovo"></a>
+          <a href="#" class="logos__link link-samsung" aria-label="Samsung"></a>
+          <a href="#" class="logos__link link-apple" aria-label="Apple"></a>
+        </nav>
+      </aside>
+
+      <div class="button-container">
+        <button
+          type="button"
+          class="switch-button switch-button_active"
+          aria-label="Показать все/скрыть"
+        >
+          Показать все
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper-container container-small-screen swiper-position">
+      <div class="swiper-wrapper">
+        <a href="#" class="swiper-slide link-lenovo" aria-label="Lenovo"></a>
+        <a href="#" class="swiper-slide link-samsung" aria-label="Samsung"></a>
+        <a href="#" class="swiper-slide link-apple" aria-label="Apple"></a>
         <a
           href="#"
-          class="logos__link link-lenovo"
-          aria-label="Lenovo"
-        ></a>
-        <a
-          href="#"
-          class="logos__link link-samsung"
-          aria-label="Samsung"
-        ></a>
-        <a
-          href="#"
-          class="logos__link link-apple"
-          aria-label="Apple"
-        ></a>
-        <a
-          href="#"
-          class="logos__link link-viewsonic"
+          class="swiper-slide link-viewsonic"
           aria-label="ViewSonic"
         ></a>
-        <a
-          href="#"
-          class="logos__link link-bosch"
-          aria-label="Bosch"
-        ></a>
-        <a href="#" class="logos__link link-hp" aria-label="Hp"></a>
-        <a href="#" class="logos__link link-aser" aria-label="Aser"></a>
-        <a href="#" class="logos__link link-sony" aria-label="Sony"></a>
-        <a
-          href="#"
-          class="logos__link link-lenovo"
-          aria-label="Lenovo"
-        ></a>
-        <a
-          href="#"
-          class="logos__link link-samsung"
-          aria-label="Samsung"
-        ></a>
-        <a
-          href="#"
-          class="logos__link link-apple"
-          aria-label="Apple"
-        ></a>
-      </nav>
-    </aside> 
-
-    
-    <div class="button-container">
-      <button
-        type="button"
-        class="switch-button"
-        aria-label="Показать все/скрыть"
-      >
-        Показать все
-      </button>
-    </div>
-</div>
-
-    <div class="swiper-container container-small-screen ">
-      <div class="swiper-wrapper">
-          <a
-            href="#"
-            class="swiper-slide brand-slide lenovo" aria-label="Lenovo"
-          ></a> 
-          <a
-            href="#"
-            class="swiper-slide brand-slide samsung" aria-label="Samsung"
-          ></a> 
-          <a
-            href="#"
-            class="swiper-slide brand-slide apple" aria-label="Apple"
-          ></a> 
-          <a
-            href="#"
-            class="swiper-slide brand-slide viewsonic" aria-label="ViewSonic"
-          ></a> 
-          <a
-            href="#"
-            class="swiper-slide brand-slide bosch" aria-label="Bosch"
-          ></a> 
-         <a href="#" class="swiper-slide brand-slide hp" aria-label="Hp"></a> 
-         <a
-            href="#"
-            class="swiper-slide brand-slide aser"
-            aria-label="Aser"
-          ></a> 
-          <a
-            href="#"
-            class="swiper-slide brand-slide sony"
-            aria-label="Sony"
-          ></a> 
-          <a
-            href="#"
-            class="swiper-slide brand-slide lenovo" aria-label="Lenovo"
-          ></a> 
+        <a href="#" class="swiper-slide link-bosch" aria-label="Bosch"></a>
+        <a href="#" class="swiper-slide link-hp" aria-label="Hp"></a>
+        <a href="#" class="swiper-slide link-aser" aria-label="Aser"></a>
+        <a href="#" class="swiper-slide link-sony" aria-label="Sony"></a>
+        <a href="#" class="swiper-slide link-lenovo" aria-label="Lenovo"></a>
       </div>
-        
-      <div class="swiper-pagination"></div>
+
+      <div class="swiper-pagination pagination-position"></div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script src="script.js"></script>
- 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
-</html> 
+</html>

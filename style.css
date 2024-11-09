@@ -7,6 +7,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0 auto;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -43,7 +45,7 @@ header {
 
 nav {
   margin-left: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .container-large-screen {
@@ -52,13 +54,21 @@ nav {
 
 .container-small-screen {
   display: block;
+  overflow-x: hidden;
 }
 
 .logos {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  max-height: 180px;
+}
+
+.logos_full {
+  max-height: 400px;
+}
+
+.logos_cut {
+  max-height: 170px;
   overflow: hidden;
 }
 
@@ -70,106 +80,76 @@ nav {
 }
 
 .link-samsung {
-  background: url("logos/cat1 copy.png");
+  background: url("logos/cat1copy.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
 .link-apple {
-  background: url("logos/cat1 copy 2.png");
+  background: url("logos/cat1copy2.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
 .link-viewsonic {
-  background: url("logos/cat1 copy 3.png");
+  background: url("logos/cat1copy3.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
 .link-bosch {
-  background: url("logos/cat1 copy 7.png");
+  background: url("logos/cat1copy7.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
 .link-hp {
-  background: url("logos/cat1 copy 8.png");
+  background: url("logos/cat1copy8.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
 .link-aser {
-  background: url("logos/cat1 copy 9.png");
+  background: url("logos/cat1copy9.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
 .link-sony {
-  background: url("logos/cat1 copy 10.png");
+  background: url("logos/cat1copy10.png");
   background-repeat: no-repeat;
   height: 72px;
   width: 240px;
 }
 
-.swiper-container {
-  width: 250px;
-  height: 80px;
-}
-
-.swiper-slide {
-  width: 240px;
-  height: 72px;
+.swiper-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 72px;
 }
 
-.brand-slide {
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
+.swiper-position {
   margin-left: 20px;
 }
 
-.lenovo {
-  background-image: url("logos/cat1.png");
-}
-.samsung {
-  background-image: url("logos/cat1 copy.png");
-}
-
-.apple {
-  background-image: url("logos/cat1 copy 2.png");
+.pagination-position {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.viewsonic {
-  background-image: url("logos/cat1 copy 3.png");
-}
-
-.bosch {
-  background-image: url("logos/cat1 copy 7.png");
-}
-.hp {
-  background-image: url("logos/cat1 copy 8.png");
-}
-
-.aser {
-  background-image: url("logos/cat1 copy 9.png");
-}
-
-.sony {
-  background-image: url("logos/cat1 copy 10.png");
+.swiper-pagination-bullet {
+  background: #adaaaa;
 }
 
 .swiper-pagination-bullet-active {
-  background: #b5b6bc !important;
+  background: #b5b6bc;
 }
 
 /* 768 */
@@ -206,7 +186,7 @@ nav {
     height: 4px;
     border-left: 2px solid #41f6d7;
     border-top: 2px solid #41f6d7;
-    transform: rotate(-135deg);
+    transform: rotate(45deg);
   }
 
   .switch-button::before {
@@ -217,5 +197,10 @@ nav {
   .switch-button::after {
     top: 10px;
     left: -20px;
+  }
+
+  .switch-button_active::before,
+  .switch-button_active::after {
+    transform: rotate(-135deg);
   }
 }

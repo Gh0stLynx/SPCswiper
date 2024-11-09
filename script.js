@@ -1,24 +1,21 @@
-let switchButton = document.querySelector(".switch-button");
-let logos = document.querySelector(".logos");
-let logosLinks = logos.querySelectorAll(".logos__link");
-
-let isShown = false;
+const switchButton = document.querySelector(".switch-button");
+const logos = document.querySelector(".logos");
+const logosLinks = logos.querySelectorAll(".logos__link");
 
 switchButton.addEventListener("click", function () {
-  isShown = !isShown;
+  logos.classList.toggle("logos_cut");
 
-  if (isShown) {
-    logos.style.maxHeight = "400px";
-    switchButton.textContent = "Скрыть";
-  } else {
-    logos.style.maxHeight = "180px";
-    switchButton.textContent = "Показать все";
-  }
+  switchButton.textContent = logos.classList.contains("logos_cut")
+    ? "Показать все"
+    : "Скрыть";
+
+  switchButton.classList.toggle("switch-button_active");
 });
 
 const swiper = new Swiper(".swiper-container", {
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: "auto",
+  spaceBetween: 20,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
