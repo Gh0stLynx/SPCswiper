@@ -11,60 +11,42 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body>
+  
+<body>
     <header class="header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ ВИДОВ</header>
 
-    <div class="container-large-screen">
-      <aside>
-        <nav class="logos logos_cut logos_full">
-          <a href="#" class="logos__link link-lenovo" aria-label="Lenovo"></a>
-          <a href="#" class="logos__link link-samsung" aria-label="Samsung"></a>
-          <a href="#" class="logos__link link-apple" aria-label="Apple"></a>
-          <a
-            href="#"
-            class="logos__link link-viewsonic"
-            aria-label="ViewSonic"
-          ></a>
-          <a href="#" class="logos__link link-bosch" aria-label="Bosch"></a>
-          <a href="#" class="logos__link link-hp" aria-label="Hp"></a>
-          <a href="#" class="logos__link link-aser" aria-label="Aser"></a>
-          <a href="#" class="logos__link link-sony" aria-label="Sony"></a>
-          <a href="#" class="logos__link link-lenovo" aria-label="Lenovo"></a>
-          <a href="#" class="logos__link link-samsung" aria-label="Samsung"></a>
-          <a href="#" class="logos__link link-apple" aria-label="Apple"></a>
-        </nav>
-      </aside>
+    <div class="swiper-container container"> 
+      <div class="logos logos_cut logos_full swiper-wrapper">
 
-      <div class="button-container">
-        <button
-          type="button"
-          class="switch-button switch-button_active"
-          aria-label="Показать все/скрыть"
-        >
-          Показать все
-        </button>
+        <a href="#" class="logos__link link-lenovo swiper-slide" aria-label="Lenovo"></a>
+        <a href="#" class="logos__link link-samsung swiper-slide" aria-label="Samsung"></a>
+        <a href="#" class="logos__link link-apple swiper-slide" aria-label="Apple"></a>
+        <a
+          href="#"
+          class="logos__link link-viewsonic swiper-slide"
+          aria-label="ViewSonic"
+        ></a>
+        <a href="#" class="logos__link link-bosch swiper-slide" aria-label="Bosch"></a>
+        <a href="#" class="logos__link link-hp swiper-slide" aria-label="Hp"></a>
+        <a href="#" class="logos__link link-aser swiper-slide" aria-label="Aser"></a>
+        <a href="#" class="logos__link link-sony swiper-slide" aria-label="Sony"></a>
+        <a href="#" class="logos__link link-lenovo swiper-slide" aria-label="Lenovo"></a>
+        <a href="#" class="logos__link link-samsung swiper-slide" aria-label="Samsung"></a>
+        <a href="#" class="logos__link link-apple swiper-slide" aria-label="Apple"></a>
       </div>
     </div>
 
-    <div class="swiper-container container-small-screen swiper-position">
-      <div class="swiper-wrapper">
-        <a href="#" class="swiper-slide link-lenovo" aria-label="Lenovo"></a>
-        <a href="#" class="swiper-slide link-samsung" aria-label="Samsung"></a>
-        <a href="#" class="swiper-slide link-apple" aria-label="Apple"></a>
-        <a
-          href="#"
-          class="swiper-slide link-viewsonic"
-          aria-label="ViewSonic"
-        ></a>
-        <a href="#" class="swiper-slide link-bosch" aria-label="Bosch"></a>
-        <a href="#" class="swiper-slide link-hp" aria-label="Hp"></a>
-        <a href="#" class="swiper-slide link-aser" aria-label="Aser"></a>
-        <a href="#" class="swiper-slide link-sony" aria-label="Sony"></a>
-        <a href="#" class="swiper-slide link-lenovo" aria-label="Lenovo"></a>
-      </div>
-
       <div class="swiper-pagination pagination-position"></div>
+    </div>   
+
+    <div class="button-container">
+      <button
+        type="button"
+        class="switch-button switch-button_active"
+        aria-label="Показать все/скрыть"
+      >
+        Показать все
+      </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -43,33 +43,29 @@ header {
   border-top: 1px solid #d9fff5;
 }
 
-nav {
-  margin-left: 20px;
-  margin-bottom: 30px;
-}
-
-.container-large-screen {
+.switch-button {
   display: none;
 }
 
-.container-small-screen {
+.swiper-pagination {
   display: block;
-  overflow-x: hidden;
 }
 
 .logos {
+  display: block;
+  max-width: 100%;
+}
+
+.swiper-container {
+  margin-left: 20px;
+  display: block;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.swiper-wrapper {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.logos_full {
-  max-height: 400px;
-}
-
-.logos_cut {
-  max-height: 170px;
-  overflow: hidden;
+  max-width: 100%;
 }
 
 .link-lenovo {
@@ -128,12 +124,6 @@ nav {
   width: 240px;
 }
 
-.swiper-wrapper {
-  display: flex;
-  width: 100%;
-  height: 72px;
-}
-
 .swiper-position {
   margin-left: 20px;
 }
@@ -155,11 +145,29 @@ nav {
 /* 768 */
 
 @media (min-width: 768px) {
-  .container-large-screen {
+  .container {
     display: block;
+    margin-left: 20px;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
-  .container-small-screen {
+  .logos {
+    display: flex;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .logos_full {
+    max-height: 600px;
+  }
+
+  .logos_cut {
+    max-height: 170px;
+    overflow: hidden;
+  }
+
+  .swiper-pagination {
     display: none;
   }
 
@@ -175,6 +183,7 @@ nav {
     color: #1b1c21;
     font-size: 14px;
     font-family: "TT Lakes Compressed Medium", sans-serif;
+    margin-top: 20px;
   }
 
   .switch-button::before,
