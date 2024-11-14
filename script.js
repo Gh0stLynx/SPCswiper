@@ -22,12 +22,12 @@ const swiper = new Swiper(".swiper-container", {
   },
 });
 
-let swiperContainer = document.querySelector(".swiper-container");
-let swiperWrapper = document.querySelector(".swiper-wrapper");
-let swiperSlide = document.querySelectorAll(".swiper-slide");
+const swiperContainer = document.querySelector(".swiper-container");
+const swiperWrapper = document.querySelector(".swiper-wrapper");
+const swiperSlide = document.querySelectorAll(".swiper-slide");
 
 window.addEventListener("resize", function () {
-  let windowWidth = window.innerWidth;
+  const windowWidth = window.innerWidth;
 
   if (windowWidth >= 768) {
     swiperContainer.classList.remove("swiper-container");
